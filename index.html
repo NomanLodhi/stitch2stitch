@@ -27,7 +27,7 @@
     </nav>
    <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container">
-    <a class="navbar-brand" href="#"><img src="./media/Stitch-Logo.png" width="200px" alt=""></a>
+    <a class="navbar-brand" href="#"><img src="./media/Stitch-Logo.png" class="main-logo" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -91,20 +91,23 @@ Let us design a unique patch that leaves a lasting impression—contact us today
 
 <div class="marquee container-fluid" aria-label="Scrolling text">
   <div class="marquee-track font-poppins">
-   <p> Amazing Deals</p>
-    <span>•</span> 
-   <p> Free Shipping</p> 
-    <span>•</span> 
-   <p> New Arrivals </p>
-    <span>•</span>
-   <p> Amazing Deals</p>
-    <span>•</span> 
-   <p> Free Shipping</p> 
-    <span>•</span> 
-   <p> New Arrivals </p>
-    <span>•</span>
+    <p> Amazing Deals</p><span>•</span> 
+    <p> Free Shipping</p><span>•</span> 
+    <p> New Arrivals </p><span>•</span>
+    <p> Amazing Deals</p><span>•</span> 
+    <p> Free Shipping</p><span>•</span> 
+    <p> New Arrivals </p><span>•</span>
+
+    <!-- Duplicate content for smooth loop -->
+    <p> Amazing Deals</p><span>•</span> 
+    <p> Free Shipping</p><span>•</span> 
+    <p> New Arrivals </p><span>•</span>
+    <p> Amazing Deals</p><span>•</span> 
+    <p> Free Shipping</p><span>•</span> 
+    <p> New Arrivals </p><span>•</span>
   </div>
 </div>
+
 
 </section>
 <section class="container-xxl px-0 py-5 font-poppins position-relative">
@@ -159,34 +162,32 @@ Let us design a unique patch that leaves a lasting impression—contact us today
       <div class="row my-5">
         <div class="col-lg-4">
           <div class="card my-2 font-poppins card-package w-100 rounded-0 py-3">
-            <img src="./media/plan_img_1.png" width="150px" height="150px" alt="">
+            
             <h3 class="text-blue  my-2">DIGITIZING</h3>
-            <p class="fw-bold py-1">Flat Price for Cap/Chest Logos</p>
+            <p class="fw-bold ">Flat Price for Cap/Chest Logos</p>
             <p class="text-blue"><sup>$</sup><span class="fs-2">10</span> <sub class="text-dark">only</sub></p>
             <p class="fw-bold py-3">Complex Vector Art:</p>
-            <p class="fw-bold py-1 text-blue">Starting from <sup>$</sup>15 Only</p>
+            <p class="fw-bold  text-blue">Starting from <sup>$</sup>15 Only</p>
             <p class="fw-bold ">-FREE EDITS AND REVISIONS !!!</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="card my-2 font-poppins card-package w-100 rounded-0 py-3">
-            <img src="./media/plan_img_2.png" width="150px" height="150px" alt="">
             <h3 class="text-blue  my-2">Vector ART</h3>
-            <p class="fw-bold py-1">Flat Price for Cap/Chest Logos</p>
+            <p class="fw-bold ">Flat Price for Cap/Chest Logos</p>
             <p class="text-blue"><sup>$</sup><span class="fs-2">10</span> <sub class="text-dark">only</sub></p>
             <p class="fw-bold py-3">Complex Vector Art:</p>
-            <p class="fw-bold py-1 text-blue">Starting from <sup>$</sup>15 Only</p>
+            <p class="fw-bold  text-blue">Starting from <sup>$</sup>15 Only</p>
             <p class="fw-bold ">-FREE EDITS AND REVISIONS !!!</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="card my-2 font-poppins card-package w-100 rounded-0 py-3">
-            <img src="./media/plan_img_3.png" width="150px" height="150px" alt="">
             <h3 class="text-blue my-2">PATCHES</h3>
-            <p class="fw-bold py-1">Flat Price for Cap/Chest Logos</p>
+            <p class="fw-bold ">Flat Price for Cap/Chest Logos</p>
             <p class="text-blue"><sup>$</sup><span class="fs-2">10</span> <sub class="text-dark">only</sub></p>
             <p class="fw-bold py-3">Complex Vector Art:</p>
-            <p class="fw-bold py-1 text-blue">Starting from <sup>$</sup>15 Only</p>
+            <p class="fw-bold  text-blue">Starting from <sup>$</sup>15 Only</p>
             <p class="fw-bold ">-FREE EDITS AND REVISIONS !!!</p>
           </div>
         </div>
@@ -259,16 +260,15 @@ Let us design a unique patch that leaves a lasting impression—contact us today
 <script>
   $(document).ready(function(){
   $('.slider').slick({
-    arrows: true,           // Enable arrows
-    dots: false,            // No dots
+    arrows: false,         
+    dots: false,           
     infinite: true,
     speed: 500,
-    slidesToShow: 4,        // Default: show 4 slides
+    slidesToShow: 4,       
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    prevArrow: '<button class="slick-prev">←</button>', // Custom left arrow
-    nextArrow: '<button class="slick-next">→</button>', // Custom right arrow
+   
     
     // Responsive settings
     responsive: [
